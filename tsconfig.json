@@ -3,22 +3,22 @@
   "compilerOptions": {
     // File Layout
     "rootDir": "./src", //menentukan folder sumber
-    "outDir": "./dist", //menentukan folder hasil build (opsional untuk dev)
+    // "outDir": "./dist", //menentukan folder hasil build (opsional untuk dev)
 
     // Environment Settings
     // See also https://aka.ms/tsconfig/module
     "module": "commonjs",
     "target": "es2016",
-    // "types": [],
+    "types": [],
     // For nodejs:
     // "lib": ["esnext"],
     // "types": ["node"],
     // and npm install -D @types/node
 
     // Other Outputs
-    // "sourceMap": true,
-    // "declaration": true,
-    // "declarationMap": true,
+    "sourceMap": true,
+    "declaration": true,
+    "declarationMap": true,
 
     // Stricter Typechecking Options
     "noUncheckedIndexedAccess": true,
@@ -33,14 +33,15 @@
     // "noPropertyAccessFromIndexSignature": true,
 
     // Recommended Options
-    "esModuleInterop": true,
-    "forceConsistentCasingInFileNames": true,
+    // "esModuleInterop": true,
+    // "forceConsistentCasingInFileNames": true,
+    "moduleResolution": "bundler",
     "strict": true,
-    // "jsx": "react-jsx",
-    // "verbatimModuleSyntax": true,
-    // "isolatedModules": true,
-    // "noUncheckedSideEffectImports": true,
-    // "moduleDetection": "force",
+    "jsx": "react-jsx",
+    "verbatimModuleSyntax": false,
+    "isolatedModules": true,
+    "noUncheckedSideEffectImports": true,
+    "moduleDetection": "force",
     "skipLibCheck": true,
   }
 }
